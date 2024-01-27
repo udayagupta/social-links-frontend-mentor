@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --primary-clr-green: hsl(75, 94%, 57%);
+    --neutral-clr-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+
+    --fw-normal: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+.clr-white {
+    color: white;
+}
+
+.clr-green {
+    color: var(--primary-clr-green);
+}
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--neutral-off-black);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+
+.card {
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    background-color: var(--neutral-dark-grey);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.avatar>img {
+    border-radius: 50%;
+    width: 70px;
+    margin-inline: auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.name {
+    font-size: 1.5rem;
+    margin-block-start: 1rem;
+    margin-inline: auto;
+    font-weight: var(--fw-semi-bold);
+}
+
+.location {
+    font-size: 0.85rem;
+    font-weight: var(--fw-semi-bold);
+    margin-inline: auto;
+    margin-block-start: 0.3rem;
+}
+
+.dev-expertise {
+    color: rgb(174, 174, 174);
+    font-size: .8rem;
+    margin-block-start: 1rem;
+    margin-inline: auto;
+}
+
+nav {
+    margin-top: 2rem;
+    margin-inline: auto;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+li {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--neutral-grey);
+    color: white;
+    min-width: 280px;
+    border-radius: 8px;
+    font-weight: var(--fw-semi-bold);
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: var(--primary-clr-green);
+    color: var(--neutral-dark-grey);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: var(--neutral-grey);
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.attribution a {
+
+    color: var(--primary-clr-green) !important;
+}
